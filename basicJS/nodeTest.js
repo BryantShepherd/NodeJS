@@ -1,10 +1,14 @@
-function foo1() {
-    console.log("floo1");
-}
+const http = require('http');
 
-function foo2(callback) {
-    console.log("foo2");
-    callback();
-}
+const hostname = '127.0.0.1';
+const port = 3000;
 
-foo2(foo1);
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/plain');
+  res.end('Hello World\n');
+});
+
+server.listen(port, hostname, () => {
+  console.log(`Server running at http://${hostname}:${port}/`);
+});

@@ -10,7 +10,7 @@ function getConnection(callback){
 
 getConnection((error, connection) => {
     if (error){
-        console.log('Error: ', error.message);
+        console.log('Error:', error.message);
     } else {
         console.log('Connection succeeded', connection);
     }

@@ -10,6 +10,8 @@ function fibonacci(n) {
 console.time('timer');
 setTimeout(function(){
     console.timeEnd('timer');
-}, 1000);
+}, 1000); // end in 1000ms.
 
+// this function is holding on to the JS thread, the event loop cannot call anything else and therefore the time-out is delayed
+// as demonstrated.
 fibonacci(44);
