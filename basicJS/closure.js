@@ -17,6 +17,7 @@ function outerFunction(arg) {
 
     bar();
 }
+
 outerFunction("Hello Closure!");
 
 function outerFunctionWithReturn() {
