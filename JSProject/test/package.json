@@ -2,6 +2,7 @@
   "name": "JSProject",
   "version": "1.0.0",
   "dependencies": {
+    "compression": "^1.7.4",
     "connect": "^3.7.0",
     "express": "^4.17.1",
     "mime": "latest",
